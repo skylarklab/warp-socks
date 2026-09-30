@@ -1,0 +1,14 @@
+main:
+  workers: 1
+  port: 1080
+  listen-address: '0.0.0.0'
+  udp-port: 20000-20099
+  udp-listen-address: '0.0.0.0'
+  udp-public-address-v4: ''
+  bind-interface: warp
+  domain-address-type: ipv4
+auth:
+  file: /run/warp-socks/auth.txt
+misc:
+  task-stack-size: 8192
+  log-level: warn
